@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spring Boot Developer Roadmap 2026 | Skills, Stages and Resources</title>
+<meta name="description" content="A friendly, stage by stage Spring Boot developer roadmap for 2026 with backend developer skills, a six month plan, and curated courses and guides for Delhi learners.">
+<meta name="keywords" content="spring boot developer roadmap, java springboot developer, backend developer skills, spring boot jobs for freshers, spring security, spring cloud, kafka spring, hibernate spring">
+<meta property="og:title" content="Spring Boot Developer Roadmap: Skills Required in 2026">
+<meta property="og:description" content="Stack your skills one layer at a time, from core Java to microservices.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#ffd3de;--pink-soft:#ffeef2;--pink-deep:#ff9fb8;--white:#fffdfb;--brown:#4a2a1b;--brown-soft:#7a5440;--yellow:#ffc933;--yellow-soft:#fff0b8;
+--display:"Bagel Fat One","Trebuchet MS",sans-serif;--body:"Nunito","Segoe UI",Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--brown);background:var(--pink-soft);line-height:1.65;font-size:17px;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brown);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.1}
+h2{font-size:clamp(1.9rem,4.5vw,3rem);margin-bottom:12px}
+.lead{max-width:60ch;color:var(--brown-soft)}
+section{padding:78px 0}
+
+/* header */
+header{position:sticky;top:0;z-index:50;padding:12px 0;background:rgba(255,238,242,.9);backdrop-filter:blur(8px)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:14px;background:var(--white);border:3px solid var(--brown);border-radius:999px;padding:8px 10px 8px 20px;box-shadow:0 5px 0 var(--brown)}
+.logo{font-family:var(--display);font-size:1.25rem;text-decoration:none;display:flex;align-items:center;gap:9px}
+.logo i{width:22px;height:22px;border-radius:50%;background:var(--yellow);border:3px solid var(--brown);display:block}
+nav{display:flex;gap:4px;align-items:center}
+nav a{text-decoration:none;font-weight:800;font-size:.95rem;padding:8px 14px;border-radius:999px}
+nav a:hover{background:var(--pink)}
+.btn{display:inline-block;text-decoration:none;font-weight:800;background:var(--yellow);color:var(--brown);border:3px solid var(--brown);border-radius:999px;padding:11px 22px;box-shadow:0 5px 0 var(--brown);transition:transform .15s,box-shadow .15s;cursor:pointer;font-family:var(--body);font-size:1rem}
+.btn:hover{transform:translateY(3px);box-shadow:0 2px 0 var(--brown)}
+.btn.alt{background:var(--white)}
+nav .btn{padding:9px 18px;box-shadow:0 3px 0 var(--brown)}
+nav .btn:hover{background:var(--yellow)}
+
+/* hero */
+.hero{padding:56px 0 70px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.tag{display:inline-block;background:var(--yellow);border:3px solid var(--brown);border-radius:999px;padding:4px 16px;font-weight:800;font-size:.9rem;transform:rotate(-2deg);margin-bottom:20px}
+h1{font-size:clamp(2.6rem,7vw,5rem);color:var(--brown);text-shadow:4px 4px 0 var(--pink-deep)}
+h1 span{display:block;color:var(--white);-webkit-text-stroke:3px var(--brown);paint-order:stroke fill;text-shadow:5px 5px 0 var(--brown)}
+.hero p{margin:22px 0 28px;max-width:52ch;font-size:1.1rem}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+
+/* cake */
+.cake{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;padding:20px 0}
+.layer{height:46px;border:3px solid var(--brown);border-radius:16px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem;cursor:pointer;transition:transform .25s,background .25s;width:var(--w);background:var(--pink);box-shadow:0 4px 0 var(--brown);font-family:var(--body);color:var(--brown)}
+.layer:nth-child(even){background:var(--white)}
+.layer:hover{transform:translateX(8px) rotate(-1deg)}
+.layer.done{background:var(--yellow)}
+.cherry{width:44px;height:44px;border-radius:50%;background:var(--pink-deep);border:3px solid var(--brown);position:relative;animation:bob 2.4s ease-in-out infinite}
+.cherry:after{content:"";position:absolute;top:-22px;left:18px;width:4px;height:22px;background:var(--brown);border-radius:4px;transform:rotate(14deg)}
+@keyframes bob{50%{transform:translateY(-8px)}}
+.cake small{margin-top:10px;font-weight:700;color:var(--brown-soft)}
+
+/* roadmap */
+#roadmap{background:var(--white);border-top:3px solid var(--brown);border-bottom:3px solid var(--brown)}
+.progress{margin:26px 0 34px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.meter{flex:1;min-width:220px;height:22px;border:3px solid var(--brown);border-radius:999px;background:var(--pink-soft);overflow:hidden}
+.meter b{display:block;height:100%;width:0;background:var(--yellow);border-right:3px solid var(--brown);transition:width .5s}
+.pct{font-family:var(--display);font-size:1.3rem;min-width:130px}
+.stages{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:start}
+.tabs{display:flex;flex-direction:column;gap:10px}
+.tab{text-align:left;font-family:var(--body);font-weight:800;font-size:1rem;color:var(--brown);background:var(--pink-soft);border:3px solid var(--brown);border-radius:18px;padding:13px 16px;cursor:pointer;display:flex;justify-content:space-between;gap:8px;transition:transform .15s,background .15s}
+.tab:hover{transform:translateX(5px)}
+.tab[aria-selected="true"]{background:var(--yellow);box-shadow:0 4px 0 var(--brown)}
+.tab em{font-style:normal;font-size:.85rem;opacity:.8}
+.panel{background:var(--pink);border:3px solid var(--brown);border-radius:28px;padding:30px;box-shadow:8px 8px 0 var(--brown);min-height:360px}
+.panel h3{font-size:1.9rem;margin-bottom:8px}
+.panel p{margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 20px}
+.chip{background:var(--white);border:2px solid var(--brown);border-radius:999px;padding:4px 14px;font-weight:700;font-size:.9rem}
+.tip{background:var(--yellow-soft);border:2px dashed var(--brown);border-radius:16px;padding:14px 16px;margin-bottom:20px;font-size:.98rem}
+.check{display:flex;gap:10px;align-items:center;font-weight:800;cursor:pointer;width:max-content}
+.check input{width:24px;height:24px;accent-color:var(--brown);cursor:pointer}
+
+/* months */
+.months{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center;margin-top:30px}
+.slider-box{background:var(--white);border:3px solid var(--brown);border-radius:28px;padding:28px;box-shadow:8px 8px 0 var(--pink-deep)}
+input[type=range]{width:100%;accent-color:var(--brown);height:32px;cursor:pointer}
+.mnum{font-family:var(--display);font-size:4.5rem;line-height:1;color:var(--yellow);-webkit-text-stroke:3px var(--brown);paint-order:stroke fill}
+.slider-box h3{font-size:1.5rem;margin:6px 0 8px}
+.ticks{display:flex;justify-content:space-between;font-weight:800;font-size:.85rem;color:var(--brown-soft)}
+.facts{display:grid;gap:14px}
+.fact{background:var(--yellow-soft);border:3px solid var(--brown);border-radius:20px;padding:16px 20px}
+.fact h3{font-size:1.2rem;margin-bottom:4px}
+
+/* resources */
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0 28px}
+.f{font-family:var(--body);font-weight:800;font-size:.95rem;color:var(--brown);background:var(--white);border:3px solid var(--brown);border-radius:999px;padding:8px 20px;cursor:pointer}
+.f[aria-pressed="true"]{background:var(--yellow);box-shadow:0 3px 0 var(--brown)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}
+.card{display:flex;flex-direction:column;text-decoration:none;background:var(--white);border:3px solid var(--brown);border-radius:24px;padding:22px;box-shadow:6px 6px 0 var(--brown);transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translate(-3px,-5px) rotate(-.6deg);box-shadow:10px 11px 0 var(--brown)}
+.card:nth-child(3n+2){background:var(--pink)}
+.card:nth-child(3n){background:var(--yellow-soft)}
+.kind{align-self:flex-start;font-weight:800;font-size:.8rem;border:2px solid var(--brown);border-radius:999px;padding:2px 12px;background:var(--yellow);margin-bottom:12px}
+.kind.blog{background:var(--white)}
+.card h3{font-size:1.25rem;margin-bottom:8px}
+.card p{font-size:.95rem;flex:1;margin-bottom:16px}
+.go{font-weight:800;border-bottom:3px solid var(--yellow);align-self:flex-start}
+.card[hidden]{display:none}
+
+/* cta */
+.cta{background:var(--yellow);border:3px solid var(--brown);border-radius:36px;padding:56px 30px;text-align:center;box-shadow:10px 10px 0 var(--brown)}
+.cta p{margin:0 auto 26px;max-width:50ch}
+.cta .cta-row{justify-content:center}
+
+/* footer */
+footer{background:var(--brown);color:var(--pink-soft);padding:54px 0 28px;margin-top:40px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px}
+footer h3{font-size:1.2rem;color:var(--yellow);margin-bottom:12px}
+footer a{display:block;text-decoration:none;padding:3px 0;opacity:.92}
+footer a:hover{color:var(--yellow);opacity:1}
+.copy{border-top:2px dashed var(--brown-soft);margin-top:34px;padding-top:18px;font-size:.9rem;opacity:.8}
+
+@media(max-width:860px){
+ .hero-grid,.stages,.months,.fgrid{grid-template-columns:1fr}
+ nav a:not(.btn){display:none}
+ .tabs{flex-direction:row;overflow-x:auto;padding-bottom:8px}
+ .tab{min-width:190px}
+ .panel{padding:22px;box-shadow:5px 5px 0 var(--brown)}
+ section{padding:56px 0}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="wrap">
+  <div class="bar">
+   <a class="logo" href="#top"><i></i>Boot Bakery</a>
+   <nav aria-label="Main">
+    <a href="#roadmap">Roadmap</a>
+    <a href="#plan">Six months</a>
+    <a href="#resources">Resources</a>
+    <a class="btn" href="https://www.justacademy.co/register-for-course-demo" target="_blank" rel="noopener">Free demo</a>
+   </nav>
+  </div>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <span class="tag">Updated for 2026</span>
+   <h1>Spring Boot developer<span>roadmap</span></h1>
+   <p>Nobody becomes a backend developer in one bite. Stack the skills layer by layer, from core Java to microservices, and tick each one off as you go. Tap a layer on the cake to start.</p>
+   <div class="cta-row">
+    <a class="btn" href="#roadmap">Start stacking</a>
+    <a class="btn alt" href="https://www.justacademy.co/blog-detail/spring-boot-developer-roadmap-skills-required-in-2026" target="_blank" rel="noopener">Read the full guide</a>
+   </div>
+  </div>
+  <div class="cake" id="cake" aria-label="Skill layers"></div>
+ </div>
+</section>
+
+<section id="roadmap">
+ <div class="wrap">
+  <h2>Seven layers, one tasty stack</h2>
+  <p class="lead">Pick a layer to see what to learn, what to build and the trap to avoid. Mark it done when you can explain it out loud to a friend.</p>
+  <div class="progress">
+   <div class="meter" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="meter"><b id="fill"></b></div>
+   <div class="pct" id="pct">0 of 7 baked</div>
+  </div>
+  <div class="stages">
+   <div class="tabs" role="tablist" id="tabs" aria-label="Stages"></div>
+   <div class="panel" id="panel" role="tabpanel" aria-live="polite"></div>
+  </div>
+ </div>
+</section>
+
+<section id="plan">
+ <div class="wrap">
+  <h2>Slide through your first six months</h2>
+  <p class="lead">A focused learner with steady weekly hours can reach a hireable level in about six months. Drag the slider to see the focus for each month.</p>
+  <div class="months">
+   <div class="slider-box">
+    <div class="mnum" id="mnum">1</div>
+    <h3 id="mtitle"></h3>
+    <p id="mtext"></p>
+    <input type="range" id="range" min="1" max="6" value="1" aria-label="Month">
+    <div class="ticks"><span>M1</span><span>M2</span><span>M3</span><span>M4</span><span>M5</span><span>M6</span></div>
+   </div>
+   <div class="facts">
+    <div class="fact"><h3>Freshers are hired</h3><p>Service firms, consultancies and product teams across Delhi, Gurugram and Noida hire juniors who can explain what they built.</p></div>
+    <div class="fact"><h3>Remote is real</h3><p>Remote Spring Boot roles reward clear writing, tidy repositories and the habit of raising blockers early.</p></div>
+    <div class="fact"><h3>Projects beat certificates</h3><p>One deployed, secured API you can defend in an interview is worth more than a folder of badges.</p></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="resources" style="background:var(--white);border-top:3px solid var(--brown);border-bottom:3px solid var(--brown)">
+ <div class="wrap">
+  <h2>Pantry of courses and guides</h2>
+  <p class="lead">Hand picked reads and live programmes that sit nicely beside your roadmap. Every card is a real link.</p>
+  <div class="filters" role="group" aria-label="Filter resources">
+   <button class="f" data-f="all" aria-pressed="true">Everything</button>
+   <button class="f" data-f="course" aria-pressed="false">Courses</button>
+   <button class="f" data-f="blog" aria-pressed="false">Guides</button>
+  </div>
+  <div class="cards" id="cards"></div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <div class="cta">
+   <h2>Hungry for a guided path?</h2>
+   <p>Try a live, instructor led session and see whether mentor led learning fits you. The demo is free.</p>
+   <div class="cta-row">
+    <a class="btn alt" href="https://www.justacademy.co/register-for-course-demo" target="_blank" rel="noopener">Book a free demo</a>
+    <a class="btn alt" href="https://www.justacademy.co/job-bootcamp-detail/delhi/full-stack-java-developer-course-in-delhi-live-online-enterprise-application-training" target="_blank" rel="noopener">See the Java course</a>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="fgrid">
+   <div>
+    <h3>Boot Bakery</h3>
+    <p>A playful, educational roadmap for anyone aiming to become a confident Spring Boot developer in 2026.</p>
+   </div>
+   <div>
+    <h3>Courses</h3>
+    <a href="https://www.justacademy.co/job-bootcamp-detail/delhi/full-stack-java-developer-course-in-delhi-live-online-enterprise-application-training" target="_blank" rel="noopener">Full Stack Java Developer</a>
+    <a href="https://www.justacademy.co/job-bootcamp-detail/delhi/full-stack-qa-automation-bootcamp-in-delhi-live-online-software-testing-automation-training" target="_blank" rel="noopener">Full Stack QA Automation</a>
+    <a href="https://www.justacademy.co/course-detail/delhi/javascript-training-in-delhi" target="_blank" rel="noopener">JavaScript Training</a>
+    <a href="https://www.justacademy.co/course-detail/delhi/python-training-in-delhi" target="_blank" rel="noopener">Python Training</a>
+   </div>
+   <div>
+    <h3>Read and join</h3>
+    <a href="https://www.justacademy.co/blog-detail/spring-boot-developer-roadmap-skills-required-in-2026" target="_blank" rel="noopener">Spring Boot roadmap guide</a>
+    <a href="https://www.justacademy.co/blog-detail/selenium-automation-testing-framework-complete-beginner-guide" target="_blank" rel="noopener">Selenium framework guide</a>
+    <a href="https://www.justacademy.co/register-for-course-demo" target="_blank" rel="noopener">Free demo class</a>
+   </div>
+  </div>
+  <div class="copy">&copy; 2026 Boot Bakery. Built for learners. Links open on justacademy.co.</div>
+ </div>
+</footer>
+
+<script>
+const stages=[
+{n:"Core Java",t:"Start with the language, not the framework",p:"Classes, interfaces, collections, streams, records, Optional, exceptions and a gentle model of threads and JVM memory. Spring is just Java wearing a clever coat.",c:["OOP","Collections","Streams","Records","Optional"],tip:"Write an interface and two implementations, then a class that uses either without knowing which. That is dependency injection with zero frameworks."},
+{n:"Spring core and Boot",t:"Learn to think in beans",p:"Inversion of control, constructor injection, component scanning, profiles, starters and auto configuration. Look behind the curtain instead of trusting the magic.",c:["Beans","DI","Profiles","Auto config","Starters"],tip:"Turn on the auto configuration report and read which beans were created and why. Skip any tutorial still using Spring 4 style setup."},
+{n:"REST APIs",t:"Build endpoints other teams can trust",p:"Correct verbs and status codes, validation, consistent errors, pagination, versioning and OpenAPI documentation, plus Actuator, logging and externalised configuration.",c:["REST","Validation","OpenAPI","Actuator","Logging"],tip:"Build a hospital booking or library app. Ask what happens when two people grab the same slot at the same second."},
+{n:"Data layer",t:"SQL first, then Hibernate and MongoDB",p:"Joins, indexes, transactions and execution plans, then Spring Data JPA, relationships, the N plus one problem and when a document database like MongoDB fits better.",c:["SQL","Hibernate","JPA","MongoDB","Transactions"],tip:"Learn what queries your ORM generates. When a page takes twelve seconds, SQL knowledge finds the cause in minutes."},
+{n:"Security",t:"Make safety a habit, not a chapter",p:"Spring Security filter chain, BCrypt, roles, JWT, OAuth2 and OpenID Connect, plus defences against injection, CSRF and careless CORS settings.",c:["Auth","JWT","OAuth2","CORS","Rate limits"],tip:"Never disable security just to make development easier. Design with it from week one and avoid painful rewrites."},
+{n:"Microservices",t:"Split only when it earns its keep",p:"Trade offs first, then Spring Cloud gateway, discovery, circuit breakers, tracing, Kafka events, idempotent consumers and the basics of Kubernetes with Spring.",c:["Spring Cloud","Kafka","Resilience","Tracing","Kubernetes"],tip:"Say out loud that microservices are a trade off. Interviewers notice candidates who describe both the gains and the costs."},
+{n:"Test and ship",t:"Prove it works, then get it online",p:"JUnit, Mockito, slice tests, Testcontainers, Dockerfiles, multi stage builds and continuous integration so every commit is built and checked automatically.",c:["JUnit","Mockito","Docker","CI","Testcontainers"],tip:"Finish with a deployed capstone and a README that explains your decisions. That project becomes your interview story."}
+];
+const months=[
+["Java and object oriented design","Write clean programs, explain inheritance and polymorphism, and get comfortable with collections and streams."],
+["SQL and Spring core","Query databases with confidence and explain how beans are created and wired together."],
+["REST APIs and errors","Build and document a complete service with validation, pagination and tidy error responses."],
+["Data and security","Add JPA, MongoDB and token based security to turn a demo into a protected application."],
+["Microservices, Kafka, Docker","Split a project into services, connect them with events and package everything in containers."],
+["Tests, capstone, interviews","Present a deployed project, clear mock interviews and explain every design decision calmly."]
+];
+const res=[
+{k:"course",n:"Full Stack Java Developer in Delhi",d:"Live online, instructor led and mentor led enterprise application training.",u:"https://www.justacademy.co/job-bootcamp-detail/delhi/full-stack-java-developer-course-in-delhi-live-online-enterprise-application-training"},
+{k:"course",n:"Full Stack QA Automation in Delhi",d:"Learn software testing and automation, the mindset that makes developers better.",u:"https://www.justacademy.co/job-bootcamp-detail/delhi/full-stack-qa-automation-bootcamp-in-delhi-live-online-software-testing-automation-training"},
+{k:"course",n:"JavaScript Training in Delhi",d:"Language foundations that make pairing Spring Boot with React feel natural.",u:"https://www.justacademy.co/course-detail/delhi/javascript-training-in-delhi"},
+{k:"course",n:"Python Training in Delhi",d:"A handy second language for scripting, reports and data cleaning.",u:"https://www.justacademy.co/course-detail/delhi/python-training-in-delhi"},
+{k:"blog",n:"Spring Boot Developer Roadmap 2026",d:"The full written guide behind this page, from Java basics to remote roles.",u:"https://www.justacademy.co/blog-detail/spring-boot-developer-roadmap-skills-required-in-2026"},
+{k:"blog",n:"Python Projects for Beginners",d:"Portfolio ideas that show finished, explainable work to recruiters.",u:"https://www.justacademy.co/blog-detail/python-projects-for-beginners-to-build-a-developer-portfolio"},
+{k:"blog",n:"JavaScript ES6 Features",d:"Arrow functions, destructuring, promises and modules explained for working developers.",u:"https://www.justacademy.co/blog-detail/javascript-es6-features-every-developer-must-know"},
+{k:"blog",n:"JavaScript Projects for a Portfolio",d:"Concrete project ideas to connect with your own Spring Boot APIs.",u:"https://www.justacademy.co/blog-detail/javascript-projects-every-beginner-should-build-for-portfolio"},
+{k:"blog",n:"Selenium Automation Framework Guide",d:"How layered test frameworks are designed, a lesson that transfers to backend tests.",u:"https://www.justacademy.co/blog-detail/selenium-automation-testing-framework-complete-beginner-guide"}
+];
+const $=id=>document.getElementById(id);
+let done=new Array(stages.length).fill(false),cur=0;
+try{const s=JSON.parse(localStorage.getItem("bootbakery"));if(Array.isArray(s)&&s.length===stages.length)done=s}catch(e){}
+function save(){try{localStorage.setItem("bootbakery",JSON.stringify(done))}catch(e){}}
+
+function drawCake(){
+ const box=$("cake");box.innerHTML='<div class="cherry" aria-hidden="true"></div>';
+ stages.forEach((s,i)=>{const b=document.createElement("button");b.className="layer"+(done[i]?" done":"");
+  b.style.setProperty("--w",(46+i*8)+"%");b.textContent=s.n;
+  b.onclick=()=>{select(i);$("roadmap").scrollIntoView({behavior:"smooth"})};box.appendChild(b)});
+ const m=document.createElement("small");m.textContent="Yellow layers are the ones you have baked.";box.appendChild(m);
+}
+function drawTabs(){
+ const t=$("tabs");t.innerHTML="";
+ stages.forEach((s,i)=>{const b=document.createElement("button");b.className="tab";b.setAttribute("role","tab");
+  b.setAttribute("aria-selected",i===cur);b.innerHTML="<span>"+s.n+"</span><em>"+(done[i]?"done":"to do")+"</em>";
+  b.onclick=()=>select(i);t.appendChild(b)});
+}
+function drawPanel(){
+ const s=stages[cur];
+ $("panel").innerHTML="<h3>"+s.t+"</h3><p>"+s.p+"</p><div class='chips'>"+s.c.map(x=>"<span class='chip'>"+x+"</span>").join("")+"</div><div class='tip'><strong>Try this:</strong> "+s.tip+"</div><label class='check'><input type='checkbox' "+(done[cur]?"checked":"")+" id='chk'> I can explain this layer out loud</label>";
+ $("chk").onchange=e=>{done[cur]=e.target.checked;save();refresh()};
+}
+function progress(){
+ const n=done.filter(Boolean).length,p=Math.round(n/stages.length*100);
+ $("fill").style.width=p+"%";$("meter").setAttribute("aria-valuenow",p);
+ $("pct").textContent=n===stages.length?"Fully baked!":n+" of "+stages.length+" baked";
+}
+function refresh(){drawCake();drawTabs();drawPanel();progress()}
+function select(i){cur=i;drawTabs();drawPanel()}
+
+function month(){
+ const v=+$("range").value;$("mnum").textContent=v;$("mtitle").textContent=months[v-1][0];$("mtext").textContent=months[v-1][1];
+}
+$("range").oninput=month;
+
+function drawCards(f){
+ const c=$("cards");c.innerHTML="";
+ res.filter(r=>f==="all"||r.k===f).forEach(r=>{
+  const a=document.createElement("a");a.className="card";a.href=r.u;a.target="_blank";a.rel="noopener";
+  a.innerHTML="<span class='kind "+r.k+"'>"+(r.k==="course"?"Course":"Guide")+"</span><h3>"+r.n+"</h3><p>"+r.d+"</p><span class='go'>Open it</span>";
+  c.appendChild(a)});
+}
+document.querySelectorAll(".f").forEach(b=>b.onclick=()=>{
+ document.querySelectorAll(".f").forEach(x=>x.setAttribute("aria-pressed",x===b));drawCards(b.dataset.f)});
+
+refresh();month();drawCards("all");
+</script>
+</body>
+</html>
